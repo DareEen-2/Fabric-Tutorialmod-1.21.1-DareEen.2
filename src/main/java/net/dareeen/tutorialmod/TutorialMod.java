@@ -1,5 +1,6 @@
 package net.dareeen.tutorialmod;
 
+import net.dareeen.tutorialmod.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,8 +12,6 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		Moditems.registerModitems();
 	}
 }
